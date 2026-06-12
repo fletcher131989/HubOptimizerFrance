@@ -214,7 +214,7 @@ def load_postcode_data():
     if not files:
         raise FileNotFoundError(
             f"No parquet files found in {parquet_folder}. "
-            "Run build_postcode_parquet_data() locally first."
+            "Run build_postcode_parquet_data(2) locally first."
         )
 
     df = pd.concat(

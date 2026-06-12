@@ -330,5 +330,5 @@ else:
                 overlay.empty()
                 st.error(str(e))
 
-        if "result" in st.session_state:
-            render_results(st.session_state["result"])
+if "result" in st.session_state:
+    render_results(st.session_state["result"])
